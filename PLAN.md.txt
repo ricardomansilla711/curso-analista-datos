@@ -1,0 +1,265 @@
+# Plan completo por fases
+
+**Total:** ~360 horas efectivas (340–400 según tu ritmo y repasos).
+**Ritmo base:** 5 h/semana → 72 semanas (~16–18 meses). Con 8 h/semana → ~45 semanas (~11–13 meses). Con 12 h/semana → ~32 semanas (~8–10 meses).
+
+> Las horas incluyen teoría, ejercicios, proyectos y documentación. No incluyen videos de fondo ni tiempo pasivo.
+
+---
+
+## Resumen de fases
+
+| Fase | Horas | Semanas a 5 h | Semanas a 8 h | Semanas a 12 h | Entregable |
+|---|---:|---:|---:|---:|---|
+| 0. Entorno y Excel básico | 15 | 3 | 2 | 1 | Primer repo + hoja de práctica |
+| 1. Excel y estadística descriptiva | 45 | 9 | 6 | 4 | Proyecto Excel |
+| 2. Python, pandas y visualización | 90 | 18 | 11 | 8 | Proyecto EDA |
+| 3. SQL y modelado | 55 | 11 | 7 | 5 | Proyecto SQL |
+| 4. Estadística inferencial y A/B | 35 | 7 | 4 | 3 | Memo de experimento |
+| 5. BI, dashboards y storytelling | 35 | 7 | 4 | 3 | Dashboard publicado |
+| 6. ML básico + IA aplicada | 55 | 11 | 7 | 5 | Modelo + app IA |
+| 7. Portafolio y búsqueda de empleo | 30 | 6 | 4 | 3 | Candidatura lista |
+| **Total** | **360** | **72** | **45** | **32** | |
+
+---
+
+## Fase 0 — Entorno y Excel básico (15 h)
+
+**Objetivo:** perder el miedo a la herramienta, entender qué es un dato y publicar tu primer repositorio.
+
+**Temas**
+- Qué es un dato, una tabla, una fila, una columna, una celda.
+- Tipos de datos: texto, número, fecha, booleano.
+- Excel/Sheets: interfaz, fórmulas, referencias, formato.
+- Aritmética y porcentajes aplicados.
+- GitHub: cuenta, repositorio, README, subir un archivo.
+
+**Ejercicios**
+1. Crea tu cuenta de GitHub y el repo `hola-datos`.
+2. Abre `datos/ventas_mini.csv` en Excel/Sheets y responde 5 preguntas.
+3. Practica 20 operaciones de porcentaje (descuentos, aumentos, participación).
+4. Escribe un README de 10 líneas explicando qué aprendiste.
+
+**Entregable:** repo `hola-datos` con el CSV, una hoja de cálculo y un README.
+
+**Criterio de aprobación:** puedes explicar con tus palabras qué es una fila, una columna y una fórmula; tu repo se ve en GitHub.
+
+---
+
+## Fase 1 — Excel y estadística descriptiva (45 h)
+
+**Objetivo:** analizar un dataset completo sin programar y tomar decisiones básicas con números.
+
+**Temas**
+- Tablas, filtros, orden, formato condicional.
+- Fórmulas: `SUMA`, `PROMEDIO`, `CONTAR`, `SI`, `BUSCARV`/`XLOOKUP`, `SUMAR.SI`, `CONTAR.SI`.
+- Tablas dinámicas.
+- Limpieza: nulos, duplicados, textos inconsistentes, fechas, outliers.
+- Estadística descriptiva: media, mediana, moda, mínimo, máximo, rango, desviación estándar, percentiles.
+- Correlación vs causalidad.
+- Elección de gráficos y primeras reglas de visualización.
+
+**Ejercicios**
+1. 15 tablas dinámicas sobre el dataset Superstore (ventas por región, categoría, mes, top clientes, margen).
+2. Limpia un dataset sucio y documenta cada decisión en `decisiones.md`.
+3. Calcula a mano media, mediana y cuartiles de 20 filas; verifica con Excel.
+4. Construye un dashboard de una página con 6 KPIs.
+5. Escribe 5 insights con números y una recomendación cada uno.
+
+**Entregable:** repo `excel-ventas-chile` con Excel/Sheets, capturas y README.
+
+**Criterio de aprobación:** puedes defender cada número y explicar qué decisión tomarías con él.
+
+---
+
+## Fase 2 — Python, pandas y visualización (90 h)
+
+**Objetivo:** reemplazar Excel por Python para análisis reproducibles y escalables.
+
+**Temas**
+- Python base: variables, tipos, listas, diccionarios, condicionales, bucles, funciones, archivos, errores.
+- NumPy y pandas: Series, DataFrame, filtros, `groupby`, `merge`, `pivot_table`, fechas.
+- Limpieza: nulos, duplicados, tipos, strings, outliers, pipelines.
+- Visualización: Matplotlib, Seaborn, elección de gráfico, colores, anotaciones.
+- EDA: preguntas, hipótesis, hallazgos, limitaciones, próximos pasos.
+- Jupyter Notebooks y buenas prácticas de reproducibilidad.
+
+**Ejercicios**
+1. 30 ejercicios de lógica en Python.
+2. 40 ejercicios de pandas.
+3. Limpia un dataset real con problemas y escribe un informe de calidad.
+4. Crea 10 gráficos, cada uno respondiendo una pregunta.
+5. EDA completo de un dataset de e-commerce o Airbnb.
+6. Reproduce 5 gráficos de un informe público y critícalos.
+
+**Entregable:** repo `eda-airbnb-santiago` (o similar) con notebook ejecutado y README.
+
+**Criterio de aprobación:** otra persona puede ejecutar tu notebook de principio a fin y llegar a los mismos resultados.
+
+---
+
+## Fase 3 — SQL y modelado (55 h)
+
+**Objetivo:** extraer datos de bases reales y responder preguntas de negocio con consultas.
+
+**Temas**
+- `SELECT`, `WHERE`, `ORDER BY`, `LIMIT`.
+- Agregaciones, `GROUP BY`, `HAVING`.
+- JOINs, subconsultas, CTEs.
+- Window functions, fechas, `CASE`.
+- Modelo estrella: hechos, dimensiones, granularidad.
+- Calidad de datos y optimización básica.
+
+**Ejercicios**
+1. SQLBolt completo.
+2. 50 consultas sobre Chinook: top artistas, ingresos mensuales, clientes inactivos, ticket medio.
+3. 10 preguntas de negocio sobre una base retail, con consulta + resultado + interpretación.
+4. Diseña un modelo estrella para ventas.
+5. Explica el plan de ejecución de 3 consultas.
+
+**Entregable:** repo `sql-retail-analysis` con archivos `.sql` numerados, ERD y README.
+
+**Criterio de aprobación:** resuelves consultas con joins y window functions sin copiar la respuesta.
+
+---
+
+## Fase 4 — Estadística inferencial y A/B testing (35 h)
+
+**Objetivo:** decidir con incertidumbre y evaluar experimentos sin engañarte.
+
+**Temas**
+- Muestreo, teorema central del límite, intervalos de confianza.
+- Test de hipótesis, t-test, chi-cuadrado, ANOVA.
+- p-valor, potencia, tamaño de muestra, errores tipo I y II.
+- A/B testing: métricas, aleatorización, duración, uplift, segmentación.
+- Sesgos frecuentes.
+
+**Ejercicios**
+1. Analiza un A/B test: conversión, IC 95%, test y tamaño del efecto.
+2. Simula 1.000 experimentos para ver falsos positivos.
+3. Calcula el tamaño de muestra para detectar +5% de conversión.
+4. Caso: “la conversión cayó 10%”. Escribe un marco de diagnóstico.
+5. Redacta un memo con decisión: lanzar, no lanzar o repetir.
+
+**Entregable:** repo `ab-test-checkout` con notebook y memo.
+
+**Criterio de aprobación:** distingues significancia estadística de relevancia práctica.
+
+---
+
+## Fase 5 — BI, dashboards y storytelling (35 h)
+
+**Objetivo:** comunicar datos a personas que no son técnicas.
+
+**Temas**
+- Power BI: conexión, modelo, relaciones, DAX básico, filtros, drillthrough, publicación.
+- Definición de KPIs y métricas.
+- Diseño visual, jerarquía, accesibilidad.
+- Narrativa: situación → hallazgo → acción.
+- Presentaciones de 5 minutos.
+
+**Ejercicios**
+1. Dashboard de ventas de 3 páginas con 8 KPIs definidos.
+2. Antes/después de un gráfico malo.
+3. Presentación de 5 minutos con recomendación.
+4. Video demo de 2–3 minutos.
+
+**Entregable:** repo `dashboard-ventas` con `.pbix`, capturas, README y video.
+
+**Criterio de aprobación:** un no técnico entiende qué pasó y qué hacer sin que se lo expliques.
+
+---
+
+## Fase 6 — Machine learning básico + IA aplicada (55 h)
+
+**Objetivo:** entender ML sin ser ingeniero y usar IA de forma profesional y verificable.
+
+**Temas ML**
+- Supervisado vs no supervisado, train/test, fuga de datos, baseline.
+- Regresión lineal/logística, árboles, random forest.
+- Métricas: MAE, RMSE, accuracy, precision, recall, F1, ROC-AUC.
+- Validación cruzada, importancia de variables, SHAP básico.
+
+**Temas IA**
+- Cómo funcionan los LLM a alto nivel; alucinaciones y límites.
+- Prompting para análisis: explorar, limpiar, revisar código, explicar resultados.
+- APIs de LLM, embeddings, RAG, agentes y automatización.
+- Evaluación, privacidad y uso responsable.
+
+**Ejercicios**
+1. Churn: baseline + regresión logística + random forest; compara y elige umbral.
+2. App “chatea con tus datos”: Streamlit + pandas + API de LLM.
+3. Automatiza un informe semanal con Python + resumen de IA.
+4. Prueba 5 prompts para el mismo análisis y documenta cuál funciona mejor.
+5. Checklist de validación de respuestas generadas por IA.
+
+**Entregables:** `churn-ml` y `ai-data-copilot`.
+
+**Criterio de aprobación:** sabes explicar por qué un modelo es mejor que otro y qué límites tiene la IA que usaste.
+
+---
+
+## Fase 7 — Portafolio y búsqueda de empleo (30 h)
+
+**Objetivo:** convertir tus proyectos en entrevistas.
+
+**Temas**
+- Limpieza de repos, README, demos.
+- CV en español (Chile) y en inglés (internacional).
+- LinkedIn y networking.
+- Entrevistas: SQL, Python, estadística, caso, behavioral.
+- Aplicaciones, seguimiento y negociación.
+
+**Ejercicios**
+1. Pule 4 proyectos obligatorios.
+2. Escribe CV y LinkedIn.
+3. Haz 3 simulacros grabados.
+4. Envía 5 candidaturas por semana con seguimiento.
+5. Pide feedback después de cada entrevista.
+
+**Entregable:** carpeta de candidatura + 4 repos listos + 20 aplicaciones.
+
+**Criterio de aprobación:** puedes presentar cada proyecto en 2 minutos y responder 10 preguntas técnicas sin leer.
+
+---
+
+## Primeras 12 semanas (ritmo 5 h)
+
+| Semana | Foco | Entregable |
+|---|---|---|
+| 1 | Entorno, Excel básico, primer repo | Hoja de práctica + repo `hola-datos` |
+| 2 | Fórmulas y porcentajes | Ejercicios resueltos |
+| 3 | Tablas, filtros, orden | Mini análisis |
+| 4 | Tablas dinámicas | 5 tablas dinámicas |
+| 5 | Limpieza en Excel | Informe de calidad |
+| 6 | Estadística descriptiva I | Ejercicios a mano |
+| 7 | Dispersión y percentiles | Análisis de outliers |
+| 8 | Correlación y gráficos | 5 gráficos |
+| 9 | Proyecto Excel I | Avance |
+| 10 | Proyecto Excel II | Versión final |
+| 11 | README, publicación y repaso | Proyecto publicado |
+| 12 | Examen práctico + preparar Python | Autoevaluación |
+
+---
+
+## Ciclo de 4 semanas
+
+Para no perder el rumbo, repite este ciclo en cada fase:
+
+1. **Semana 1:** conceptos + ejercicios guiados.
+2. **Semana 2:** más ejercicios + mini quiz.
+3. **Semana 3:** proyecto.
+4. **Semana 4:** terminar, documentar, publicar y repasar.
+
+---
+
+## Checkpoints
+
+- [ ] Semana 3: sé usar Excel para sumar, filtrar y ordenar.
+- [ ] Semana 12: proyecto Excel publicado.
+- [ ] Semana 30: EDA en Python publicado.
+- [ ] Semana 41: proyecto SQL publicado.
+- [ ] Semana 48: memo de A/B test.
+- [ ] Semana 55: dashboard publicado.
+- [ ] Semana 66: modelo ML + app de IA.
+- [ ] Semana 72: CV, LinkedIn, 4 repos y 20 aplicaciones.
